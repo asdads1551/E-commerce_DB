@@ -1,0 +1,69 @@
+/* 基礎樣式 */
+/* ... 現有的CSS代碼 ... */
+
+/* 平板設備 */
+@media (max-width: 768px) {
+  /* 在這裡添加平板設備的樣式 */
+}
+
+/* 手機設備 */
+@media (max-width: 480px) {
+  /* 在這裡添加手機設備的樣式 */
+  body {
+    font-size: 16px;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+  
+  .button {
+    padding: 12px 20px;
+  }
+  
+  .nav-list {
+    display: none;
+  }
+  
+  .menu-toggle {
+    display: block;
+  }
+  
+  .nav-list.active {
+    display: block;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
